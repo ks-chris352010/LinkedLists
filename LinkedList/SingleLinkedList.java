@@ -5,7 +5,7 @@ public class SingleLinkedList {
     public Node tail;
     public int size;
 
-    // Cretae a linked List
+    // Cretae a linked List:
     public Node createLinkedList(int nodeValue){
         head = new Node();
         Node node = new Node();
