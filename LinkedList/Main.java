@@ -7,13 +7,16 @@ public class Main {
         singleLinkedList.insertInLinkedList(2, 1);
         singleLinkedList.insertInLinkedList(3, 2);
         singleLinkedList.insertInLinkedList(4, 3);
-        singleLinkedList.insertInLinkedList(5, 1);
+        singleLinkedList.insertInLinkedList(5, 1); 
         singleLinkedList.traverseLinkedList();
-        singleLinkedList.searchNode(4);
+
+        singleLinkedList.deleteNode(0); 
+        singleLinkedList.traverseLinkedList();
+
+        singleLinkedList.deleteNode(2); 
+        singleLinkedList.traverseLinkedList();
+
+        singleLinkedList.deleteNode(1); 
+        singleLinkedList.traverseLinkedList();
     }
 }
-
-
-//Assignment question number
-//1. Uncomment line 10 "singleLinkedList.insertInLinkedList(5, 1)" and Investigate and fix
-    // why when inserting a value at a position that is already occupied, it throws a null pointer exception.
