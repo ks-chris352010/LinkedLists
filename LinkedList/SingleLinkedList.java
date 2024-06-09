@@ -17,25 +17,21 @@ public class SingleLinkedList {
         return head;
     }
 
-    //insert into a linked list
-    //0. If link list doesn't
-    //1. inserting at the begining
-    //2. Inserting at the ending
-    //3. Insert anywhere
+    // Insert into linked list:
     public void insertInLinkedList(int nodeValue, int location) {
         Node node = new Node();
         node.value = nodeValue;
         if (head == null) {
             createLinkedList(nodeValue);
             return;
-        } else if (location == 0) { // Inserting at the beginning
+        } else if (location == 0) { 
             node.next = head;
             head = node;
-        } else if (location >= size) { // Inserting at the end
+        } else if (location >= size) { 
             tail.next = node;
             node.next = null;
             tail = node;
-        } else { // Inserting at a specific location
+        } else { 
             Node tempNode = head;
             int index = 0;
             while (index < location - 1) {
@@ -65,8 +61,7 @@ public class SingleLinkedList {
         System.out.print("\n");
     }
 
-    //Search for a Node
-
+    //Search for Node:
     public boolean searchNode (int nodeValue){
         if (head != null) {
             Node tempNode = head;
@@ -83,11 +78,7 @@ public class SingleLinkedList {
     }
 
 
-    //Deleting a Node from a Single linked List
-    //0. If link list doesn't
-    //1. deleting at the begining
-    //2. deleting at the ending
-    //3. deleting anywhere in the list
+    //Deleting a Node:
     public void deleteNode(int location) {
         if (head == null) { 
             System.out.println("SLL does not exist.");
